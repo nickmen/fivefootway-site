@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Five Foot Way · Walk to build your city</title>
+<meta name="description" content="Five Foot Way is an iPhone game where your everyday steps build a pixel-art island city, one building at a time.">
+<meta property="og:title" content="Five Foot Way">
+<meta property="og:description" content="Your everyday steps build a city, one building at a time.">
+<meta property="og:image" content="https://nickmen.github.io/fivefootway-site/img/icon.png">
+<link rel="icon" href="img/icon.png">
+<link rel="apple-touch-icon" href="img/icon.png">
+<style>
+  :root {
+    --bg: #fbf7f1;
+    --panel: #ffffff;
+    --ink: #22302e;
+    --mute: #5c6b68;
+    --line: #e6ddd0;
+    --accent: #2c7a70;
+    --lantern: #c8443a;
+    --ground: #efe6d8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #151b1a;
+      --panel: #1d2524;
+      --ink: #e8eeec;
+      --mute: #a1b1ae;
+      --line: #2f3b39;
+      --accent: #6cc6b7;
+      --lantern: #f07a6c;
+      --ground: #1b2322;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 17px/1.6 ui-rounded, "SF Pro Rounded", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 60rem; margin: 0 auto; padding: 48px 20px 64px; }
+  img { max-width: 100%; height: auto; display: block; }
+  a { color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  .hero { display: grid; grid-template-columns: auto 1fr; gap: 24px; align-items: center; }
+  .icon { width: 112px; height: 112px; border-radius: 25px; box-shadow: 0 8px 24px rgba(0,0,0,.15); }
+  .app { color: var(--accent); font-weight: 800; letter-spacing: .04em; text-transform: uppercase; font-size: 13px; margin: 0; }
+  h1 { font-size: clamp(32px, 6vw, 48px); line-height: 1.1; margin: 4px 0 10px; text-wrap: balance; }
+  .lede { color: var(--mute); font-size: 19px; margin: 0; max-width: 40ch; }
+  .cta { display: inline-block; margin-top: 18px; background: var(--ink); color: var(--bg); border-radius: 12px; padding: 10px 18px; font-weight: 700; text-decoration: none; }
+  .cta small { display: block; font-weight: 500; font-size: 12px; opacity: .75; }
+
+  .skyline { display: flex; align-items: flex-end; justify-content: center; gap: clamp(4px, 2vw, 20px); margin: 48px 0 0; padding: 24px 12px 0; background: var(--ground); border-radius: 20px; overflow: hidden; }
+  .skyline img { min-width: 0; flex: 0 1 auto; }
+  .skyline .s1 { width: 16%; } .skyline .s2 { width: 22%; } .skyline .s3 { width: 12%; } .skyline .s4 { width: 22%; } .skyline .s5 { width: 18%; }
+
+  h2 { font-size: 26px; margin: 56px 0 8px; text-wrap: balance; }
+  .sub { color: var(--mute); margin: 0 0 20px; max-width: 60ch; }
+
+  .rise { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+  .rise figure { margin: 0; background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 14px 10px 10px; display: flex; flex-direction: column; justify-content: flex-end; }
+  .rise figcaption { text-align: center; color: var(--mute); font-size: 14px; margin-top: 8px; }
+
+  .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px; }
+  .card h3 { margin: 0 0 4px; font-size: 18px; }
+  .card p { margin: 0; color: var(--mute); }
+  .card.private { border-left: 4px solid var(--accent); }
+
+  footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--mute); font-size: 14px; display: flex; flex-wrap: wrap; gap: 8px 20px; }
+
+  @media (max-width: 560px) {
+    .hero { grid-template-columns: 1fr; }
+    .icon { width: 88px; height: 88px; border-radius: 20px; }
+    .rise { grid-template-columns: repeat(2, 1fr); }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header class="hero">
+    <img class="icon" src="img/icon.png" alt="Five Foot Way app icon" width="112" height="112">
+    <div>
+      <p class="app">Five Foot Way</p>
+      <h1>Walk to build your city.</h1>
+      <p class="lede">Every step you take goes into a building site on your own little island. Walk more and it rises, from bare plot to lit-up landmark.</p>
+      <span class="cta">Coming soon<small>to the App Store for iPhone</small></span>
+    </div>
+  </header>
+
+  <div class="skyline" aria-hidden="true">
+    <img class="s1" src="img/kopitiam.png" alt="">
+    <img class="s2" src="img/hall.png" alt="">
+    <img class="s3" src="img/tower.png" alt="">
+    <img class="s4" src="img/ferris.png" alt="">
+    <img class="s5" src="img/rise3.png" alt="">
+  </div>
+
+  <h2>Your walk, in bricks</h2>
+  <p class="sub">Pick what to build, then go about your day. Steps from your iPhone and Apple Health are counted against your own usual pace, so a good day for you is a good day for the city.</p>
+  <div class="rise">
+    <figure><img src="img/rise0.png" alt="An empty building plot"><figcaption>A plot</figcaption></figure>
+    <figure><img src="img/rise1.png" alt="Scaffolding going up"><figcaption>Scaffolding</figcaption></figure>
+    <figure><img src="img/rise2.png" alt="The walls nearly done"><figcaption>Walls</figcaption></figure>
+    <figure><img src="img/rise3.png" alt="A finished Art Deco cinema"><figcaption>Opening night</figcaption></figure>
+  </div>
+
+  <h2>What's on the island</h2>
+  <div class="features">
+    <div class="card"><h3>Buildings with character</h3><p>Kopitiams, kampung houses, a mosque, an Art Deco cinema, a town hall, towers and a Ferris wheel, each modelled for itself.</p></div>
+    <div class="card"><h3>From village to metropolis</h3><p>Homes bring residents, residents bring new eras, and each era unlocks more to build.</p></div>
+    <div class="card"><h3>Day and night</h3><p>After dark the windows, lamps and signs light up across the island.</p></div>
+    <div class="card"><h3>A widget that keeps up</h3><p>See your city and today's progress on your Home Screen without opening the app.</p></div>
+    <div class="card"><h3>Its own soundtrack</h3><p>Relaxed music for mornings, sunny afternoons, evening lamps and starlit nights.</p></div>
+    <div class="card"><h3>Keep the memories</h3><p>Save a picture, or a video of your island growing, to your photo library.</p></div>
+    <div class="card private"><h3>Private by design</h3><p>No account, no ads, no tracking. Your steps never leave your iPhone. <a href="privacy-policy.html">Privacy policy</a></p></div>
+  </div>
+
+  <footer>
+    <span>© 2026 Yeong Jie Khoo</span>
+    <a href="support.html">Support</a>
+    <a href="privacy-policy.html">Privacy Policy</a>
+    <a href="mailto:parcelwish@gmail.com">parcelwish@gmail.com</a>
+  </footer>
+</main>
+</body>
+</html>
