@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support · Five Foot Way</title>
+<meta name="description" content="Support and contact for Five Foot Way, the iPhone game where your steps build a city.">
+<style>
+  :root {
+    --bg: #fbf7f1;
+    --panel: #ffffff;
+    --ink: #22302e;
+    --mute: #5c6b68;
+    --line: #e6ddd0;
+    --accent: #2c7a70;
+    --lantern: #c8443a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #151b1a;
+      --panel: #1d2524;
+      --ink: #e8eeec;
+      --mute: #a1b1ae;
+      --line: #2f3b39;
+      --accent: #6cc6b7;
+      --lantern: #f07a6c;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 17px/1.6 ui-rounded, "SF Pro Rounded", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  main {
+    max-width: 44rem;
+    margin: 0 auto;
+    padding-inline: 20px;
+    padding-block: 48px 64px;
+  }
+  header { border-bottom: 1px solid var(--line); padding-bottom: 24px; margin-bottom: 8px; }
+  .app { color: var(--accent); font-weight: 800; letter-spacing: .04em; text-transform: uppercase; font-size: 13px; margin: 0; }
+  h1 { font-size: 34px; line-height: 1.15; margin: 6px 0 8px; text-wrap: balance; }
+  .date { color: var(--mute); margin: 0; font-size: 15px; }
+  .summary {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 18px 20px;
+    margin: 28px 0 8px;
+  }
+  .summary p { margin: 0; }
+  h2 { font-size: 21px; margin: 36px 0 8px; text-wrap: balance; }
+  p, li { max-width: 65ch; }
+  ul { padding-left: 1.2em; }
+  li { margin: 6px 0; }
+  li strong { color: var(--ink); }
+  a { color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--mute); font-size: 14px; }
+  details { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 14px 18px; margin: 10px 0; }
+  summary { font-weight: 700; cursor: pointer; }
+  details p { margin: 10px 0 2px; }
+  .contact { font-size: 19px; font-weight: 700; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <p class="app">Five Foot Way</p>
+    <h1>Support</h1>
+    <p class="date">Help with Five Foot Way, the iPhone game where your steps build a city.</p>
+  </header>
+
+  <div class="summary">
+    <p>Something not working, or an idea for the island? Email <a class="contact" href="mailto:parcelwish@gmail.com?subject=Five%20Foot%20Way%20support">parcelwish@gmail.com</a>. Mention your iPhone model and iOS version, and a screenshot helps. Replies usually come within a few days.</p>
+  </div>
+
+  <h2>Common questions</h2>
+
+  <details>
+    <summary>My steps are not showing up</summary>
+    <p>Five Foot Way reads your step count from Apple Health. Open the <strong>Settings</strong> app, go to <strong>Health &rarr; Data Access &amp; Devices &rarr; Five Foot Way</strong>, and turn on <strong>Steps</strong>. Then check <strong>Settings &rarr; Privacy &amp; Security &rarr; Motion &amp; Fitness</strong> and make sure Five Foot Way is allowed, so the city can grow while you walk.</p>
+  </details>
+
+  <details>
+    <summary>Why don't steps I type into the Health app count?</summary>
+    <p>Only steps your iPhone or a connected device actually counted will build. Steps entered by hand are ignored, and no single hour can count more steps than a person could walk in it.</p>
+  </details>
+
+  <details>
+    <summary>The widget is behind the app</summary>
+    <p>iOS decides how often widgets refresh, and Apple Health shares new steps only every so often while your phone is locked. Opening Five Foot Way brings the widget up to date straight away.</p>
+  </details>
+
+  <details>
+    <summary>Does my city back up, or move to a new iPhone?</summary>
+    <p>Your city is stored only on your iPhone. There is no account and nothing is uploaded, so deleting the app deletes the city. An iPhone backup or a transfer to a new iPhone brings it with you.</p>
+  </details>
+
+  <details>
+    <summary>Does the app cost anything?</summary>
+    <p>No. Five Foot Way is free, with no ads and nothing to buy.</p>
+  </details>
+
+  <details>
+    <summary>What happens to my health data?</summary>
+    <p>It never leaves your iPhone. The app has no analytics, no tracking and no internet connection for your data. Read the full <a href="privacy-policy.html">privacy policy</a>.</p>
+  </details>
+
+  <footer>Five Foot Way · Made by Yeong Jie Khoo · <a href="privacy-policy.html">Privacy Policy</a></footer>
+</main>
+</body>
+</html>
